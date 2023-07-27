@@ -29,21 +29,9 @@
 </head>
 <body>
     
-    <header class=" font-lato max-w-screen-xl h-24  mx-auto lg:bg-[#F85559] lg:mt-12 flex px-10 rounded-full lg:justify-around">
-        <div class="navbar flex">
+    <header class=" font-lato max-w-screen-xl h-24  mx-auto lg:bg-[#F85559] lg:mt-12 flex lg:px-10 rounded-full lg:justify-around">
+        <div class="navbar lg:flex hidden">
             <div class="navbar-start">
-
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <i class="fa-solid fa-bars" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"></i><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
-                </label>
-                <ul tabindex="0" class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shado shadow-xl rounded-box w-52">
-                    <li><a>Home</a></li>
-                    <li> <a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                  </ul>
-                </div>
 
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-white">
@@ -54,8 +42,8 @@
                     </ul>
                   </div>
               </div>
-              <a href="#" class="text-2xl flex w-80 gap-x-2 font-bold lg:text-white"><img class="w-12" src="./css/images/logo.png">Fruit Burst</a>
-            <div class="navbar-end hidden lg:flex">
+              <a href="#" class=" text-2xl flex w-80 gap-x-2 font-bold lg:text-white"><img class="w-12" src="./css/images/logo.png">Fruit Burst</a>
+            <div class="navbar-end">
               <div class="w-64 h-10 bg-white rounded-full flex justify-center items-center">
                 <input class="border-none outline-none p-1" placeholder="Search here" type="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -64,7 +52,21 @@
           </div>
         </div>
       
-        
+        <div>
+        <div class="dropdown z-50 flex mt-4">
+          <div>
+            <a href="#" class="lg:hidden text-2xl flex ml-4   items-center  gap-x-2 font-bold lg:text-white"><img class="w-12" src="./css/images/logo.png">Fruit Burst</a>
+          </div>
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars text-4xl mt-2 absolute -right-28" fill="none" viewBox="0 0 24 24" stroke="currentColor"></i><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+          </label>
+          <ul tabindex="0" class="absolute bg-white menu menu-sm dropdown-content mt-20  z-40 p-2 shado shadow-xl rounded-box w-52">
+              <li><a>Home</a></li>
+              <li> <a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
     </header>
 
 
